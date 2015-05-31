@@ -1,0 +1,12 @@
+module <%= name.camelize %>
+  module Routes
+    class Sample < API
+
+      # Test Route
+      get '/', provides: :json do
+        { a: 'test' }.to_json
+      end
+
+    end
+  end
+end

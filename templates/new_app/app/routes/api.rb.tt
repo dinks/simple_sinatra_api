@@ -1,0 +1,24 @@
+module <%= name.camelize %>
+  module Routes
+    class API < Sinatra::Application
+      configure do
+        disable :static
+
+        set :show_exceptions, false
+      end
+
+      before do
+        content_type :json
+      end
+
+      error do
+        halt 500, json({
+            code: 500,
+            message: request.env['sinatra.error'].to_s
+          })
+      end
+
+      register Extensions::API
+    end
+  end
+end

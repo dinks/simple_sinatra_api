@@ -1,0 +1,18 @@
+module <%= name.camelize %>
+  module Extensions
+    module API extend self
+
+      module Helpers
+        def json(value, options = {})
+          content_type :json
+          value.to_json({ a: 'test' }.merge(options))
+        end
+      end
+
+      def self.registered(app)
+        app.helpers Helpers
+      end
+
+    end
+  end
+end

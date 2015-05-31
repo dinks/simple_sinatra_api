@@ -1,0 +1,5 @@
+module <%= name.camelize %>
+  module Extensions
+    autoload :API, 'app/extensions/api'
+  end
+end

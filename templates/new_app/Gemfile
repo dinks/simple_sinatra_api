@@ -1,0 +1,30 @@
+source 'https://rubygems.org'
+ruby '2.1.2'
+
+gem 'sinatra', require: 'sinatra/base'
+
+gem 'dotenv'
+
+gem 'json'
+
+gem 'omniauth'
+gem 'ruby-openid'
+
+# DB
+gem 'sequel'
+gem 'sinatra-sequel'
+
+# Support utility methods like years
+gem 'activesupport', '~> 4.1.1'
+
+group :development do
+  gem 'thin'
+  gem 'byebug'
+
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'sequel_postgresql_triggers'
+  gem 'pg'
+end

@@ -1,0 +1,35 @@
+module <%= name.camelize %>
+  module Routes
+    class Error < Sinatra::Application
+
+      def error_404
+        halt 404, json({
+            code: 404,
+            message: "Page not found"
+          })
+      end
+
+      get "/*" do
+        error_404
+      end
+
+      post "/*" do
+        error_404
+      end
+
+      put "/*" do
+        error_404
+      end
+
+      patch "/*" do
+        error_404
+      end
+
+      delete "/*" do
+        error_404
+      end
+
+      register Extensions::API
+    end
+  end
+end

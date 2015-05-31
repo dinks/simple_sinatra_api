@@ -1,0 +1,8 @@
+module <%= name.camelize %>
+  module Routes
+    autoload :API, 'app/routes/api'
+    autoload :Error, 'app/routes/error'
+
+    autoload :Sample, 'app/routes/sample'
+  end
+end
