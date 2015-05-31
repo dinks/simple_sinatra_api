@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["dineshvasudevan2003@yahoo.com"]
   spec.summary       = %q{ Generate an opinionated Simple Sinatra Application for API Backend }
   spec.description   = %q{ Generate an opinionated Simple Sinatra Application for API Backend }
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/dinks/simple_sinatra_api"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -22,6 +22,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
 
-  spec.add_dependency "thor"
-  spec.add_dependency "activesupport"
+  spec.add_dependency "thor", "~> 0.19"
+  spec.add_dependency "activesupport", "~> 4.2"
 end
