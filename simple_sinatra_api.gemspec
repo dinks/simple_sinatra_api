@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "simple_sinatra_api"
   spec.version       = SimpleSinatraApi::VERSION
   spec.authors       = ["Dinesh Vasudevan"]
-  spec.email         = ["dineshvasudevan2003@yahoo.com"]
+  spec.email         = ["dinesh.vasudevan@gmail.com"]
   spec.summary       = %q{ Generate an opinionated Simple Sinatra Application for API Backend }
   spec.description   = %q{ Generate an opinionated Simple Sinatra Application for API Backend }
   spec.homepage      = "https://github.com/dinks/simple_sinatra_api"
